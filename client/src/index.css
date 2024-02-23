@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #5a3d5c;
+  --bg-color-hero: #3648574d;
+  --bg-logo: #ad8c45;
+  --color-text: #ffffff;
+  --color-btn: #364857;
+}
+
+* {
+  /* box-shadow: 0px 0px 2px #000000; */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color-text);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-btn);
+}

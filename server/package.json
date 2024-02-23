@@ -1,0 +1,32 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
+  },
+  "keywords": [
+    "react",
+    "tailwind.css",
+    "nodejs",
+    "expressjs",
+    "mongoDb"
+  ],
+  "author": "Adair Costa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.3",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "mailgen": "^2.0.28",
+    "mongoose": "^8.1.2",
+    "nodemailer": "^6.9.9"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
