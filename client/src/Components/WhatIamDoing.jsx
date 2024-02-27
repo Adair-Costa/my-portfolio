@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // COMPONENTS
-import "./whatIamDoing.css";
+import "./WhatIamDoing.css";
 import worldwise from "/images/worldwise.png";
 import fastReactPizza from "/images/fastReactPizza.png";
 import usePopCorn from "/images/usePopCorn.png";
