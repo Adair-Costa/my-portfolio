@@ -3,7 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const helmet = require('helmet');
 
-const userRouter = require('../server/routes/userRoutes');
+const userRouter = require('./routes/userRoutes');
 
 const corsOptions = {
     origin: 'http://localhost:5173',
