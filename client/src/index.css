@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  /* box-shadow: inset 0 0 1px black; */
+  font-family: "Excon", sans-serif;
+}
+
+:root {
+  --base: #34495e;
+  --primary: #f7fa86;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.active {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .active {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
