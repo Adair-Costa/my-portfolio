@@ -1,8 +1,9 @@
 import photoProject from '../assets/photo-project.png'
 
-function Projects() {
+function Projects({ sectionContacts }) {
     return (
-        <div className="flex flex-col justify-center px-4 mt-4 tablet:h-screen">
+        <div className="flex flex-col justify-center px-4 mt-4 tablet:h-screen"
+            ref={sectionContacts}>
             <h1
                 className="mb-4 text-center text-4xl
             text-primary"

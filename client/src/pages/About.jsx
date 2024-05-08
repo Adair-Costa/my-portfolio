@@ -3,24 +3,24 @@ import { useRef } from "react";
 // COMPONENTS
 import AboutMe from "../components/AboutMe";
 import Contacts from "../components/ContactsComponent";
-import Footer from "../components/Footer";
+import FooterAbout from "../components/FooterAbout";
 import Navbar from "../components/Navbar";
 import NavbarWithBreakpoint from "../components/NavbarWithBreakpoint";
 import Portfolios from "../components/PortfoliosComponent";
 import Projects from "../components/Projects";
 
 function About({ handleScroll }) {
-    const sectionAbout = useRef();
+    const sectionAbout = useRef(null);
 
     return (
         <div className="bg-base font-sans text-neutral">
             <Navbar />
             <NavbarWithBreakpoint />
-            <AboutMe />
+            <AboutMe sectionAbout={sectionAbout} />
             <Projects />
             <Portfolios />
             <Contacts />
-            <Footer handleScroll={handleScroll} sectionAbout={sectionAbout} />
+            <FooterAbout handleScroll={handleScroll} sectionAbout={sectionAbout} />
         </div>
     );
 }

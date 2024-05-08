@@ -8,10 +8,10 @@ import AboutMe from '../components/AboutMe';
 import Portfolios from '../components/PortfoliosComponent';
 import Contacts from '../components/ContactsComponent';
 import Projects from '../components/Projects';
-import Footer from '../components/Footer';
+import FooterHome from '../components/FooterHome';
 
 function Home({ handleScroll }) {
-    const sectionHome = useRef();
+    const sectionHome = useRef(null);
 
     return (
         <div className="bg-base font-sans text-neutral">
@@ -22,7 +22,7 @@ function Home({ handleScroll }) {
             <Portfolios />
             <Projects />
             <Contacts />
-            <Footer handleScroll={handleScroll} sectionHome={sectionHome} />
+            <FooterHome handleScroll={handleScroll} sectionHome={sectionHome} />
         </div>
     );
 }

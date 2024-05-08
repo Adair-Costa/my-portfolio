@@ -1,9 +1,10 @@
 // COMPONENTS
 import { FaCode } from "react-icons/fa";
 
-function Portfolios() {
+function Portfolios({ sectionPortfolios }) {
     return (
-        <div className="flex flex-col justify-center px-4 mt-4 tablet:h-[30rem]">
+        <div className="flex flex-col justify-center px-4 mt-4 tablet:h-[30rem]"
+            ref={sectionPortfolios}>
             <h1
                 className="mb-4 text-center text-4xl
                 text-primary"

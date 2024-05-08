@@ -9,8 +9,7 @@ import Contacts from "./pages/Contacts";
 
 export default function App() {
   function handleScroll(section) {
-    console.log(section.current);
-    window.scrollTo({ top: section.current.offsetTop, behavior: "smooth" });
+    window.scrollTo({ top: section.current?.offsetTop });
   }
 
   return (

@@ -1,8 +1,9 @@
 import photoSetup from "../assets/photo-setup.png";
 
-function AboutMe() {
+function AboutMe({ sectionAbout }) {
     return (
         <div
+            ref={sectionAbout}
             className="flex flex-col items-center gap-4 px-4 mt-4
           tablet:flex-row tablet:justify-between tablet:h-screen"
         >

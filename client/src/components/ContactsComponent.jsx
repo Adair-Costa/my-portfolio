@@ -5,7 +5,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 
-function Contacts() {
+function ContactsComponent() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -170,4 +170,4 @@ function Contacts() {
     );
 }
 
-export default Contacts;
+export default ContactsComponent;

@@ -5,18 +5,18 @@ import Navbar from "../components/Navbar";
 import NavbarWithBreakpoint from "../components/NavbarWithBreakpoint";
 import ContactsComponent from "../components/ContactsComponent";
 import Projects from "../components/Projects";
-import Footer from "../components/Footer";
+import FooterContacts from "../components/FooterContacts";
 
 function Contacts({ handleScroll }) {
-    const sectionContacts = useRef();
+    const sectionContacts = useRef(null);
 
     return (
         <div className="bg-base font-sans text-neutral">
             <Navbar />
             <NavbarWithBreakpoint />
-            <Projects />
             <ContactsComponent />
-            <Footer handleScroll={handleScroll} sectionContacts={sectionContacts} />
+            <Projects sectionContacts={sectionContacts} />
+            <FooterContacts handleScroll={handleScroll} sectionContacts={sectionContacts} />
         </div>
     );
 }

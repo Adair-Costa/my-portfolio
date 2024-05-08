@@ -2,23 +2,23 @@ import { useRef } from "react";
 
 // COMPONENTS
 import Contacts from "../components/ContactsComponent";
-import Footer from "../components/Footer";
+import FooterPortfolios from "../components/FooterPortfolios";
 import Navbar from "../components/Navbar";
 import NavbarWithBreakpoint from "../components/NavbarWithBreakpoint";
 import PortfoliosComponent from "../components/PortfoliosComponent";
 import Projects from "../components/Projects";
 
-function Portfolios(handleScroll) {
-    const sectionPortfolios = useRef();
+function Portfolios({ handleScroll }) {
+    const sectionPortfolios = useRef(null);
 
     return (
         <div className="bg-base font-sans text-neutral">
             <Navbar />
             <NavbarWithBreakpoint />
-            <PortfoliosComponent />
+            <PortfoliosComponent sectionPortfolios={sectionPortfolios} />
             <Projects />
             <Contacts />
-            <Footer
+            <FooterPortfolios
                 handleScroll={handleScroll}
                 sectionPortfolios={sectionPortfolios}
             />

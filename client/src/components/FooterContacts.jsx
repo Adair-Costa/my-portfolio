@@ -1,3 +1,4 @@
+import ButtonScrollToTop from "./ButtonScrollToTop";
 import { NavLink } from "react-router-dom";
 
 // COMPONENTS
@@ -8,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 
 import Logo from "../assets/logo.png";
 
-function Footer({ handleScroll, sectionHome }) {
+function FooterContacts({ handleScroll, sectionContacts }) {
 
     return (
         <div
@@ -30,12 +31,18 @@ function Footer({ handleScroll, sectionHome }) {
 
             <ul className="flex gap-4 text-[1.2rem] tablet:text-primary">
                 <li>
-                    <NavLink to="https://www.linkedin.com/in/adair-costa-670aaa17b/" target='_blank'>
+                    <NavLink
+                        to="https://www.linkedin.com/in/adair-costa-670aaa17b/"
+                        target="_blank"
+                    >
                         <FaLinkedin />
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="https://github.com/Adair-Costa/Adair-Costa" target='_blank'>
+                    <NavLink
+                        to="https://github.com/Adair-Costa/Adair-Costa"
+                        target="_blank"
+                    >
                         <FaGithub />
                     </NavLink>
                 </li>
@@ -45,18 +52,18 @@ function Footer({ handleScroll, sectionHome }) {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="https://twitter.com/aldairsalvador3" target='_blank'>
+                    <NavLink to="https://twitter.com/aldairsalvador3" target="_blank">
                         <FaTwitter />
                     </NavLink>
                 </li>
             </ul>
-            <button onClick={() => handleScroll(sectionHome)}>
+            <ButtonScrollToTop onClick={() => handleScroll(sectionContacts)}>
                 <NavLink to="#">
                     <h6 className=" font-medium text-primary underline">Scroll to top</h6>
                 </NavLink>
-            </button>
+            </ButtonScrollToTop>
         </div>
     );
 }
 
-export default Footer;
+export default FooterContacts;
